@@ -7,7 +7,9 @@ from django.shortcuts import render
 
 
 def home(request):
-    return render(request, 'recipes/home.html', status=201)
+    return render(request, 'recipes/home.html', context={
+        'name': 'Allan Conti Junior',
+    })
 
 
 def contato(request):
